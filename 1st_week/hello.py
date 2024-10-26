@@ -67,3 +67,34 @@ people = [
 print(people[0]['age']) #19
 print(people[1]['name']) #evren
 print(people[2]['address']) #군산
+
+# 3. 함수
+# 함수를 정의하는 이름은 마음대로 정할 수 있음!
+
+#수학문제에서
+    # f(x) = 2*x+3
+    # y = f(2)
+    # y의 값은? 7
+
+# js 에서는?
+#function f(x) {
+#   return 2*x+3
+# }
+
+# 파이썬에서는?
+# def f(x):
+    # return 2*x+3
+
+# y = f(2)
+# y 값은? 7
+
+# 함수 응용
+def sum_all(a,b,c):
+    return a+b+c
+
+def mul(a,b):
+    return a*b
+
+result = sum_all(1,2,3) + mul(10,10)
+
+print(result) #106
