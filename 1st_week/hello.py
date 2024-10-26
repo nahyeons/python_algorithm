@@ -32,3 +32,14 @@ print(shop[1]) #['사과']
 print(shop[2]) #['홍시']
 # print(shop[3]) # IndexError: list index out of range >> 범위를 벗어났음을 알려줌
 print(shop[-1]) #>> 홍시 출력 (-넣으면 뒤에서 앞으로 출렫된다 '-2 사과' '-3 체리')
+
+# 3) 딕셔너리형
+bk = {
+    "name" : "admin",
+    "age" : 20,
+    "address" : "서울"
+}
+
+print(bk['name']) #admin
+print(bk['age']) #20
+print(bk['address']) #서울
