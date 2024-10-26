@@ -43,3 +43,27 @@ bk = {
 print(bk['name']) #admin
 print(bk['age']) #20
 print(bk['address']) #서울
+
+# >> 딕셔너리형 + 리스트형
+
+people = [
+    {
+        "name" : "cassiel",
+        "age" : "19",
+        "address" : "부산"
+    },
+    {
+        "name" : "evren",
+        "age" : "29",
+        "address" : "서울"
+    },
+    {
+        "name" : "lucius",
+        "age" : "34",
+        "address" : "군산"
+    }
+]
+
+print(people[0]['age']) #19
+print(people[1]['name']) #evren
+print(people[2]['address']) #군산
