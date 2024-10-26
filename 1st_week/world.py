@@ -67,9 +67,8 @@ people = [
     {'name': 'ben', 'age': 27}
 ]
 
-#모든 사람의 이름, 나이 출력
-for person in people:
-    print(person['name'], person['age'])
+# for person in people:
+#     print(person['name'], person['age']) >> 모든사람의 이름, 나이출력
 
 #이름을 받으면 나이를 리턴해주는 함수
 def get_age(myname):
