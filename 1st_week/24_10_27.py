@@ -13,4 +13,12 @@ gus = rjson['RealtimeCityAir']['row'] #모든 구의 IDEX_MVL 값 찍기
 # pprint(gus)
 
 for gu in gus:
-	print(gu['MSRSTE_NM'], gu['IDEX_MVL'])
+	# print(gu['MSRSTE_NM'], gu['IDEX_MVL'])
+
+#>> 이렇게 print 할 수 있지만 name으로 작성해서 프린트 할 수 도 있음
+
+    gu_name = gu['MSRSTE_NM']
+    gu_mise = gu['IDEX_MVL']
+    print(gu_name, gu_mise)
+
+    
