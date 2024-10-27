@@ -19,6 +19,6 @@ for gu in gus:
 
     gu_name = gu['MSRSTE_NM']
     gu_mise = gu['IDEX_MVL']
-    print(gu_name, gu_mise)
-
-    
+    # print(gu_name, gu_mise)
+    if gu_mise < 60: # 조건 : IDEX_MVL 값이 60 미만인 구만 출력
+        print(gu_name, gu_mise)
