@@ -22,3 +22,23 @@ for gu in gus:
     # print(gu_name, gu_mise)
     if gu_mise < 60: # 조건 : IDEX_MVL 값이 60 미만인 구만 출력
         print(gu_name, gu_mise)
+
+
+# 함수로 사용해보기
+def get_gu_mise(name):
+    r = requests.get('http://spartacodingclub.shop/sparta_api/seoulair')
+    rjson = r.json()
+
+    gus = rjson['RealtimeCityAir']['row']
+    for gu in gus:
+        gu_name = gu['MSRSTE_NM']
+        gu_mise = gu['IDEX_MVL']
+        if gu_name == name:
+            return gu_mise
+
+    return "미세먼지가 없습니다"
+
+print(get_gu_mise("중구"))
+print(get_gu_mise("종로구"))
+print(get_gu_mise("송파구"))
+print(get_gu_mise("관악구"))
